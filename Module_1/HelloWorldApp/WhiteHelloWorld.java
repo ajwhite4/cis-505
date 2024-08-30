@@ -7,11 +7,7 @@ package Module_1.HelloWorldApp;
 // This Java program prints a "Hello World from {YourFirstName} {YourLastName}" message to the console
 public class WhiteHelloWorld {
     public static void main(String[] args) {
-        /**
-         * Declare and initialize a String variables to store "Andrew" and "White"
-         * @param firstName String
-         * @param lastName String
-         */
+        // Declare and initialize a String variables to store "Andrew" and "White"
         String firstName = "Andrew";
         String lastName = "White";
 
