@@ -11,8 +11,8 @@ public class Team {
     private String[] players = new String[20];
     private int playerCount = 0;
 
-     // Argument constructor to create team with team name
-     public Team(String teamName) {
+    // Argument constructor to create team with team name
+    public Team(String teamName) {
         this.teamName = teamName;
     }
 
