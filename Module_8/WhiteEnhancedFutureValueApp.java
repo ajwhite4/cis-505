@@ -20,7 +20,9 @@ import java.util.Date;
 
 /** 
  * This application lays out a user interface for the FutureValueApp.
- * It shows that JavaFX is installed and configured properly in VS Code.
+ * It asks a user for three inputs: amount, interest rate, and years.
+ * Upon the user selecting calculate, the program will calculate total
+ * future cost. If the user selects the clear button, all values are reset.
  */
 public class WhiteEnhancedFutureValueApp extends Application {
     
