@@ -149,7 +149,7 @@ public class WhiteGradeBookApp extends Application {
             lblResults.setTextFill(Color.RED);
             ex.printStackTrace();
         }
-    }
+    } // End saveGrade
 
     // Method to view saved grades in grades.csv
     private void viewGrades() {
@@ -195,7 +195,7 @@ public class WhiteGradeBookApp extends Application {
             txtResults.setText("");
             ex.printStackTrace();
         }
-    }
+    } // End viewGrades
 
     // Method to clear the form fields
     private void clearForm() {
@@ -205,7 +205,7 @@ public class WhiteGradeBookApp extends Application {
         gradeComboBox.setValue(null);
         txtResults.clear();
         lblResults.setText(null);
-    }
+    } // End clearForm
 
     public static void main(String[] args) {
         launch(args);
