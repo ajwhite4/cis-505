@@ -131,6 +131,19 @@ public class WhiteGradeBookApp extends Application {
             return;
         }
 
+        // Check for invalid characters (commas, numbers, and special characters)
+        if (!firstName.matches("[a-zA-Z ]+") || !lastName.matches("[a-zA-Z ]+")) {
+            lblResults.setText("Names should only consist of letters.");
+            lblResults.setTextFill(Color.RED);
+            return;
+        }
+
+        if (courseName.contains(",")) {
+            lblResults.setText("Course name should not contain commas.");
+            lblResults.setTextFill(Color.RED);
+            return;
+        }
+
         // Write to grades.csv
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("grades.csv", true))) {
             File file = new File("grades.csv");
